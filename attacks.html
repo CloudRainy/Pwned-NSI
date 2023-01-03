@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permet de rendre un affichage responsive notamment sur les mobiles -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- On lie la feuille de style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- On ajoute une librairie de polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- On ajoute la librairie d'icone FontAwesome -->
+    <script src="https://kit.fontawesome.com/9e7994cd95.js" crossorigin="anonymous"></script>
+    <title>Différents types d'attaques informatiques qui peuvent être utilisées par des black hat</title>
+    
+</head>
+<body>
+
+<!-- On retrouve tout le code lié à la navbar du site, qui permet de naviguer entre les différentes pages/thématiques -->
+<div id="navbar-content">
+    <nav class="navbar">
+        <ul class="navbar-menu">
+
+            <li class="navbar-item logo">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="#" class="navbar-link">
+                    <i class="fa-solid fa-database navbar-icon navbar-icon"></i>
+                    <span class="navbar-title">
+                        Pwned.cf
+                    </span>
+                </a>
+            </li>
+
+        <!-- Bouton "Comment protéger ses données ?" -->
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="protect-data.html" class="navbar-link">
+                    <i class="fa-solid fa-lock navbar-icon"></i>
+                    <!-- On ajoute du texte qu'on pourra facilement stylisé avec css -->
+                    <span class="navbar-title">
+                        Protéger ses données
+                    </span>
+                </a>
+            </li>
+
+
+        <!-- Bouton "Comment obtenir un mot de passe robuste ?" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="passwords.html" class="navbar-link">
+                    <i class="fa-solid fa-dumbbell navbar-icon"></i>
+                    <span class="navbar-title">
+                        Obtenir un mot de passe robuste
+                    </span>
+                </a>
+            </li>
+
+
+
+
+        <!-- Bouton "Différents types d'attaques" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="attacks.html" class="navbar-link">
+                    <i class="fa-solid fa-shield-halved navbar-icon"></i>
+                    <span class="navbar-title">
+                        Différents types d'attaques
+                    </span>
+                </a>
+            </li>
+
+            
+
+
+        <!-- Bouton "SOurces, en savoir plus" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="sources.html" class="navbar-link">
+                    <i class="fa-sharp fa-solid fa-circle-info navbar-icon"></i>
+                    <span class="navbar-title">
+                        En savoir +
+                    </span>
+                </a>
+            </li>
+
+
+
+        <!-- Bouton Home, retour à la page d'accueil -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="index.html" class="navbar-link">
+                    <i class="fa-solid fa-house navbar-icon"></i>
+                    <!-- On utilise une balise span qui permettra de cacher le texte lorsque la souris ne survole pas la navbar -->
+                    <span class="navbar-title">
+                        Page d'accueil
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>   
+</div>
+
+<!-- Contenu principal de la page, que l'on va placer à droite, on peut utiliser main aussi -->
+<div class="main-container-middle">
+
+    
+    <h1  id="Content-title">
+        Différentes attaques informatiques
+    </h1>
+
+    <p class="title">
+        De nombreuses attaques peuvent être effectuées à l'encontre d'un système informatique, nous allons en voir quelques-unes
+    </p>
+
+    
+   
+
+
+    <ul>
+
+        <li>
+            Phishing : c'est une attaque qui consiste à envoyer des e-mails ou des messages de phishing pour tenter de voler des informations personnelles, comme des mots de passe ou des données de carte de crédit.
+            On peut utiliser une 
+            <a href="https://fr.wikipedia.org/wiki/Sandbox_(s%C3%A9curit%C3%A9_informatique)" target="_blank" rel="noopener noreferrer">
+                sandbox
+            </a>
+           pour exécuter du code pouvait potentiellement affecter le système. 
+        </li>
+        
+
+        <li>
+            DDoS (Distributed Denial of Service) : c'est une attaque qui consiste à surcharger un site Web ou un service en ligne en envoyant un grand nombre de requêtes simultanées, rendant ainsi le site ou le service inaccessible aux utilisateurs légitimes.
+            On peut notamment utiliser un 
+            <a href="https://fr.wikipedia.org/wiki/Botnet" target="_blank" rel="noopener noreferrer">
+            botnet.
+            </a>
+        </li>
+
+
+
+        
+
+        <li>
+            Les attaques par Drive by Download : la personne malveillante insère un script malveillant dans le code HTTP ou bien PHP d'une page qui permet d'installer un logiciel malveillant. Cette attaque est particulièrement viscieuse car elle ne nécessite par d'intéraction de la part de l'utilisateur. Pour s'en protéger, il faut effectuer les mises à jour de sécurité du système d'exploitation et des logiciels.
+        </li>
+
+
+        <li>
+            Les attaques par mot de passe :
+            <ul>
+                <li>
+                    Les attaques dites par force brute : on tente des mots de passe de façon aléatoire de manière à trouver le mot de passe utilisé
+                </li>
+
+                
+                <li>
+                    Les attaques par disctionnaire : on copie un fichier chiffré contenant les mots de passe, on applique le même chiffrement à un disctionnaire de mots de passe couramment utilisés, puis on compare les résultats pour trouver le mot de passe utilisé
+                </li>
+
+                                    
+            </ul>
+        </li>
+
+
+        
+        <li>
+            L'attaque "man in the middle" : la personne malveillante grâce à des outils adaptés va intercepter le trafic réseau entre le client et le serveur
+        </li>
+
+       
+    </ul>   
+    
+    <p id="link-section">
+        Pour s'en prémunir, voir la section 
+        <a href="protect-data.html">
+            Protéger ses données
+        </a>
+
+
+</div>
+
+
+</html>

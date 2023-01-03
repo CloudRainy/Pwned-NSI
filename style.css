@@ -1,0 +1,255 @@
+:root {
+  /* permet de créer une variable que l'on réutilisera par la suite */
+  --navbar-background-color: #f2f2f2;
+  --navbar-item-survolé-color:white;
+  --navbar-separator-color:#ececec;
+  /* Couleur de l'icone lorsqu'elle n'est pas survolée*/
+  --navbar-icon-color:#646c79;
+  /* Couleur prédéfinie pour les éléments constituant la navbar */
+  --navbar-text-color:rgba(0, 0, 0, 0.897);
+  /* Durée de transition */
+  --navbar-transition-speed: 0.65s;
+  /* Couleur des icones lorsqu'elles sont survolées ou cliquées */
+  --button-item-color: #032174;
+  /* couleur du background du logo du site, un peu plus foncé que pour les autres éléments d'importance moindre */
+  --navbar-logo-background-color:#e2dfe4;
+  --link-color: #0077b6
+}
+
+/* On enlève les paramètres prédéfinis du navigateur afin d'obtenir un affichage standardisé */
+body {
+  /* Pas de marges*/
+  margin:0;
+  /* On utilise une police trouvée sur Google Font */
+  font-family: 'Poppins', sans-serif;
+  /* On définit la taille de la police */
+  font-size: 16px;   
+  /* Cela nous permmetra d'insérer une image sans que texte et images se chevauchent */
+  margin-right: auto; 
+}
+
+/* Validateur CSS importé de https://jigsaw.w3.org/css-validator/validator */
+
+
+
+/* On fait ressortir les titres */
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Petit titres */
+#sm-title {
+  font-size: 18px;
+  color: #7209b7;
+}
+
+#illu-war {
+  font-style: normal;
+  font-size: 17px;
+  padding-left: 48%;
+}
+
+a {
+  /* On enlève le soulignage par défaut des liens */
+  text-decoration: none ;
+transition: transform 0.25 ease-out;
+  color: var(--link-color);
+  
+}
+
+
+
+
+/* Les liens vers les autres pages dans la navbar */
+#link-section {
+  /* on définit la taille de la police */
+  font-size: 25px;
+  /* On change la couleur du bouton */
+  color: var(--button-item-color);
+  /* On change le curseur */
+  cursor: grabbing;
+}
+
+/* Contenu, au milieu de la page */
+.main-container-middle {
+  /* Espacer le contenu */
+  padding: 1rem 4rem;
+  /* On définit la place occupée par ce menu */
+  margin-left: 5rem;
+/* Permet de ne pas coller le texte à l'image */
+  text-align: left;
+  text-align: justify;
+  
+  
+}
+
+/* Toutes les images */
+.img-war {
+  float: right;
+  /* On enlève la puce de l'image */
+ list-style-type: none;
+ /* On ajoute des bordures arrondies */
+ border-radius: 7px;
+ /* On utilise les marges sinon, avec padding, la courbure des bordures disparaît */
+ margin-left: 10px;
+ position: relative;
+}
+
+/* Ne fonctionne pas parfaitement */
+ /* On rend l'image responsive en lui fixant sa largeur */
+/* width: 100%;
+ /* Même chose en lui fixant sa largeur maximale */
+ /* max-width: 400px; */ 
+
+
+
+
+
+
+
+/* Le logo de keepass, dans les sources */
+#logo-keepass {
+  position: absolute;
+  float:right ;
+  left: 85%;
+  bottom: 55%;
+  /* On aligne les éléments au centre */
+  /* On les affiche à partir du même point */
+  display: flex;
+}
+
+/* Texte sur le logiciel Keepass, dans les sources */
+#text-keepass {
+  /* On aligne le texte à droite  */
+  text-align: right;
+  /* On définit sa place par rapport aux marges */
+  left: 85%;
+  bottom: 49%;
+  /* aucun n'espace n'est créé sur la */
+  position: absolute;
+}
+
+/* ON DEFINIT LA NAVBAR */
+
+.navbar {
+  /* On définit la place utilisée par le container du texte */
+  width: 5rem;
+  position:fixed;
+  /* Utilise toute la place sur la largeur */
+  top:0px;
+  left:0px;
+  bottom:0px;
+  /* On réutilise la pseudo class que l'on a définit dans root, on met rend le background du menu de navigation blanc */
+  background:var(--navbar-background-color);
+  /* Séparation entre le menu et le contenu par une ombre */
+  box-shadow: rgba(12,43, 30, 0.2) 0 4px 14px;
+  /* Ajoute une transition de déroulement sur la largeur de la navbar, slider de gauche à droite */
+  transition: width var(--navbar-transition-speed) ease-in;
+
+}
+
+/* On définit la largeur fi */
+.navbar:hover {
+  width:23rem;
+  /* Effet de flou */
+  backdrop-filter: blur(100px);
+}
+
+/* Conteneur des boutons */
+.navbar-menu {
+  /* On enlève le point des balises li */
+  list-style: none;
+  padding:0;
+  margin:0;
+  /* Permet d'aligner toutes les li, pour qu'elle commencent au même endroit */
+  display:flex;
+  /* Eléments les uns en dessous des autres */
+  flex-direction: column;
+  /* On centre les éléments au milieu */
+  align-items: center;
+  /* On utilise l'espace vertical */
+  height: 100%;
+}
+
+/* On va l'animer */
+.navbar-item {
+  /* Lorsqu'elle est déployée, elle prend la largeur maximale */
+  width: 100%;
+  /* On ajoute une fine bordure entre chaque case, pour un aspect plus esthétique */
+  border-bottom:solid 1px var(--navbar-separator-color);
+}
+
+/* On éclaire la couleur du background de l'élément de la liste séléctionné */
+.navbar-item:hover {
+  background-color:var(--navbar-item-survolé-color);
+}
+
+/* On colle le dernier élément de la liste en bas */
+.navbar-data:last-child {
+  margin-top:auto;
+}
+
+/* On va gérer les élements lorsque le menu est ouvert et fermé */
+.navbar-link {
+  display:flex;
+  /* On aligne les icones avec le texte verticalement */
+  align-items: center;
+  /* On aligne le contenu à gauche */
+  justify-content: flex-start;
+  /* Lorsque le menu est fermé, cela fait un carré, voir précédent attributs */
+  height: 5rem;
+  /* Largeur maximale */
+  width: 100%;
+  /* On veut supprimer le souligné, pour ne pas montrer le lien */
+  text-decoration: none;
+
+}
+
+/* On chercher à les centrer dans le carré*/
+.navbar-icon {
+  text-align: center;
+  font-size: 1.5rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  /* On reprend la variable définit dans root pour définir la couleur*/
+  color:var(--navbar-icon-color);
+  /* On reprend la variable définit dans root pour définir la vitesse de transition*/
+  transition:var(--navbar-transition-speed);
+}
+
+/* On change la couleur des icones lorsque l'élément de la liste (box) est survolée */
+.navbar-item:hover .navbar-icon {
+  color:var(--button-item-color);
+  
+}
+
+/* Les élements de txt de la navbar s'affichent en noir. Nb, on aurait pu les désigner par des classes */
+.navbar-title { 
+  color:var(--navbar-text-color);
+}
+/* Quand la barre de navigation n'est pas survolée par la souris, on cache navbar-title, 
+ça permet de cacher le texte et de garder uniquement l'icone */
+.navbar:not(:hover) .navbar-title {
+  display:none;
+}
+
+/* On met un background légèrement plus sombre pour le nom du site */
+.logo {
+  background:var(--navbar-logo-background-color);
+}
+
+.logo .navbar-title {
+  font-size:1.5rem;
+  /* On met le titre en gras */
+  font-weight:bold;
+  /* On ajoute une marge à gauche pour se démarquer */
+  margin-left:2rem;
+}
+
+
+/* FIN DE LA NAVBAR */
+
+
+
+

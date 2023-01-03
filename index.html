@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permet de rendre un affichage responsive notamment sur les mobiles -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- On lie la feuille de style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- On ajoute une librairie de polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- On ajoute la librairie d'icone FontAwesome -->
+    <script src="https://kit.fontawesome.com/9e7994cd95.js" crossorigin="anonymous"></script>
+    <title>Page d'accueil</title>
+    
+</head>
+<body>
+
+<div id="checker">
+    <!-- Validation -->
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="padding-left:90%;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="CSS Valide !">
+        </a>
+    </p>
+</div>
+
+<!-- On retrouve tout le code lié à la navbar du site, qui permet de naviguer entre les différentes pages/thématiques -->
+<div id="navbar-content">
+    <nav class="navbar">
+        <ul class="navbar-menu">
+
+            <li class="navbar-item logo">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="#" class="navbar-link">
+                    <i class="fa-solid fa-database navbar-icon navbar-icon"></i>
+                    <span class="navbar-title">
+                        Pwned.cf
+                    </span>
+                </a>
+            </li>
+
+        <!-- Bouton "Comment protéger ses données ?" -->
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="protect-data.html" class="navbar-link">
+                    <i class="fa-solid fa-lock navbar-icon"></i>
+                    <!-- On ajoute du texte qu'on pourra facilement stylisé avec css -->
+                    <span class="navbar-title">
+                        Protéger ses données
+                    </span>
+                </a>
+            </li>
+
+
+        <!-- Bouton "Comment obtenir un mot de passe robuste ?" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="passwords.html" class="navbar-link">
+                    <i class="fa-solid fa-dumbbell navbar-icon"></i>
+                    <span class="navbar-title">
+                        Obtenir un mot de passe robuste
+                    </span>
+                </a>
+            </li>
+
+
+
+
+        <!-- Bouton "Différents types d'attaques" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="attacks.html" class="navbar-link">
+                    <i class="fa-solid fa-shield-halved navbar-icon"></i>
+                    <span class="navbar-title">
+                        Différents types d'attaques
+                    </span>
+                </a>
+            </li>
+
+            
+
+
+        <!-- Bouton "SOurces, en savoir plus" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="sources.html" class="navbar-link">
+                    <i class="fa-sharp fa-solid fa-circle-info navbar-icon"></i>
+                    <span class="navbar-title">
+                        En savoir +
+                    </span>
+                </a>
+            </li>
+
+
+
+        <!-- Bouton Home, retour à la page d'accueil -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="index.html" class="navbar-link">
+                    <i class="fa-solid fa-house navbar-icon"></i>
+                    <!-- On utilise une balise span qui permettra de cacher le texte lorsque la souris ne survole pas la navbar -->
+                    <span class="navbar-title">
+                        Page d'accueil
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>   
+</div>
+
+<!-- Contenu principal de la page, que l'on va placer à droite, on peut utiliser main aussi -->
+<div class="main-container-middle">
+
+    
+    <h1  id="Content-title">
+        Les mots de passes
+    </h1>
+
+    <p class="title">
+        <ul>
+            <li class="title">
+                Qu'est-ce qu'un mot de passe ?
+            </li>
+        </ul> 
+ 
+
+    <p id="ckoi-mdp">
+        Un mot de passe est un mot ou une série de caractères utilisés comme moyen d'authentification pour prouver son identité lorsque l'on désire accéder à un lieu protégé, à un compte informatique, un ordinateur, un logiciel ou à un service dont l'accès est limité et protégé.
+    </p>
+
+    <p class="title">
+        <ul>
+            <li class="title">
+                Quelle est l'origine des mots de passe ?
+            </li>
+        </ul> 
+
+
+        <p>
+            Le mot de passe tire ses origines du champs de bataille, en effet les militaires utilisaient le "mot de sommation" qui était la question, et le "mot de passe" pour y répondre. C'était un moyen qui permettait de se reconnaître si la visibilité était mauvaise.  
+        </p>
+
+    <p class="img-war">  
+        <figure> 
+            <img class="img-war" src="https://live.staticflickr.com/7098/26975125553_ad8d88a763_3k.jpg" width="700" height="300" 
+            alt="The Duryea Zouaves Carrying off the Body of Lieu. Greble from the Field of Battle, Amidst the Fire of the Secession Forces, at Great Bethel"> 
+            <figcaption id="illu-war">
+                <a href="https://wordpress.org/openverse/image/faedf5f9-2617-43ce-beef-1699d84d1eab" target="_blank" rel="noopener noreferrer">
+                    Image d'illustration du champs de bataille
+                </a>
+                </figcaption>    
+        </figure>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

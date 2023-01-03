@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permet de rendre un affichage responsive notamment sur les mobiles -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- On lie la feuille de style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- On ajoute une librairie de polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- On ajoute la librairie d'icone FontAwesome -->
+    <script src="https://kit.fontawesome.com/9e7994cd95.js" crossorigin="anonymous"></script>
+    <title>Page d'accueil</title>
+    
+</head>
+<body>
+
+<!-- On retrouve tout le code lié à la navbar du site, qui permet de naviguer entre les différentes pages/thématiques -->
+<div id="navbar-content">
+    <nav class="navbar">
+        <ul class="navbar-menu">
+
+            <li class="navbar-item logo">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="#" class="navbar-link">
+                    <i class="fa-solid fa-database navbar-icon navbar-icon"></i>
+                    <span class="navbar-title">
+                        Pwned.cf
+                    </span>
+                </a>
+            </li>
+
+        <!-- Bouton "Comment protéger ses données ?" -->
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="protect-data.html" class="navbar-link">
+                    <i class="fa-solid fa-lock navbar-icon"></i>
+                    <!-- On ajoute du texte qu'on pourra facilement stylisé avec css -->
+                    <span class="navbar-title">
+                        Protéger ses données
+                    </span>
+                </a>
+            </li>
+
+
+        <!-- Bouton "Comment obtenir un mot de passe robuste ?" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="passwords.html" class="navbar-link">
+                    <i class="fa-solid fa-dumbbell navbar-icon"></i>
+                    <span class="navbar-title">
+                        Obtenir un mot de passe robuste
+                    </span>
+                </a>
+            </li>
+
+
+
+
+        <!-- Bouton "Différents types d'attaques" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="attacks.html" class="navbar-link">
+                    <i class="fa-solid fa-shield-halved navbar-icon"></i>
+                    <span class="navbar-title">
+                        Différents types d'attaques
+                    </span>
+                </a>
+            </li>
+
+            
+
+
+        <!-- Bouton "SOurces, en savoir plus" -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="sources.html" class="navbar-link">
+                    <i class="fa-sharp fa-solid fa-circle-info navbar-icon"></i>
+                    <span class="navbar-title">
+                        En savoir +
+                    </span>
+                </a>
+            </li>
+
+
+
+        <!-- Bouton Home, retour à la page d'accueil -->
+            
+            <li class="navbar-item">
+                <!-- On ajoute une icone FontAwesome qu'on définit -->
+                <a href="index.html" class="navbar-link">
+                    <i class="fa-solid fa-house navbar-icon"></i>
+                    <!-- On utilise une balise span qui permettra de cacher le texte lorsque la souris ne survole pas la navbar -->
+                    <span class="navbar-title">
+                        Page d'accueil
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>   
+</div>
+
+
+<!-- Contenu principal de la page, que l'on va placer à droite, on peut utiliser main aussi -->
+<div class="main-container-middle">
+
+
+    <h1  class="Content-title">
+        Les sources que j'ai utilisées, vous pouvez en savoir plus en cliquant sur les liens !
+    </h1>
+
+    <ul>
+        <li>
+            <a href="https://www.cnil.fr/fr/les-conseils-de-la-cnil-pour-un-bon-mot-de-passe" target="_blank" rel="noopener noreferrer">
+            Les conseils de la CNIL pour un bon mot de passe
+            </a>
+                
+        </li>
+        <li>
+            <a href="https://www.cnil.fr/fr/generer-un-mot-de-passe-solide" target="_blank" rel="noopener noreferrer">
+            Générer un mot de passe solide - CNIL
+            </a>
+        </li>
+
+        
+        
+
+        <li>
+            <a href="https://blog.netwrix.fr/2018/07/04/les-10-types-de-cyberattaques-les-plus-courants/" target="_blank" rel="noopener noreferrer">
+                Les 10 types de cyberattaques les plus courantes
+            </a>
+        </li>
+
+        <li>
+            <a href="https://fr.wikipedia.org/wiki/Sandbox_(s%C3%A9curit%C3%A9_informatique)" target="_blank" rel="noopener noreferrer">
+                Sandbox Wikipédia
+            </a>
+        </li>
+
+        <li>
+            <a href="https://nordpass.com/fr/most-common-passwords-list/" target="_blank" rel="noopener noreferrer">
+            Liste des mots de passes les plus communs par NordPass
+            </a>
+        </li>
+
+        <li>
+            <a href="https://fr.wikipedia.org/wiki/Botnet" target="_blank" rel="noopener noreferrer">
+            Qu'est-ce qu'un botnet - Wikipédia
+            </a>
+        </li>
+
+        <li>
+            <a href="https://fr.wikipedia.org/wiki/Hame%C3%A7onnage" target="_blank" rel="noopener noreferrer">
+            Le phishing - Wikipédia
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.dashlane.com/fr/features/password-generator" target="_blank" rel="noopener noreferrer">
+            Générateur de mots de passe forts - Dashlane
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.roboform.com/fr/password-generator" target="_blank" rel="noopener noreferrer">
+            Comment obtenir un bon mot de passe - Roboform
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.youtube.com/watch?v=boATQI1ye5M" target="_blank" rel="noopener noreferrer">
+                ETHICAL HACKING & CYBERSÉCURITÉ - Waked XY YouTube
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="https://www.cnil.fr/fr/principes-cles/guide-de-la-securite-des-donnees-personnelles" target="_blank" rel="noopener noreferrer">
+                Guide de la sécurité des données personnelles - CNIL
+            </a>
+        </li>
+
+        <li class="keepass">
+            <a href="https://keepass.info/" target="_blank" rel="noopener noreferrer">
+                Site officiel du gestionnaire de mot de passe Open-source KeePass
+            </a>
+                <p>
+                    <figure>
+                        <img id="logo-keepass" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/KeePass_icon.svg/1200px-KeePass_icon.svg.png" width="150" height="150" alt="logo de Keepass">      
+                    </figure>
+        </li>
+       
+    </ul>
+
+    <p id="text-keepass">
+        <a href="http://https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/KeePass_icon.svg/1200px-KeePass_icon.svg.png" target="_blank" rel="noopener noreferrer">
+            Logo de Keepass
+        </a>
+    </p>
+
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D-qeRtyF0Bs?start=38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <figcaption>
+            Vidéo de Waked XY : COMPRENDRE LES ATTAQUES DOS/DDOS
+            <br>N'hésitez pas à faire un tour sur sa 
+            <a href="https://www.youtube.com/@wakedxy" target="_blank" rel="noopener noreferrer">
+                chaîne !
+            </a>
+        </figcaption>
+
+</div>
+
+
+
+</body>
+</html>
