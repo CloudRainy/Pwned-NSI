@@ -1,0 +1,30 @@
+---------------------------------------------------------------------------------SOURCES :---------------------------------------------------------------------------------
+https://www.cnil.fr/fr/les-conseils-de-la-cnil-pour-un-bon-mot-de-passe
+https://www.cnil.fr/fr/generer-un-mot-de-passe-solide
+https://blog.netwrix.fr/2018/07/04/les-10-types-de-cyberattaques-les-plus-courants/
+https://fr.wikipedia.org/wiki/Sandbox_(s%C3%A9curit%C3%A9_informatique)
+https://nordpass.com/fr/most-common-passwords-list/
+https://fr.wikipedia.org/wiki/Botnet
+https://fr.wikipedia.org/wiki/Hame%C3%A7onnage
+https://www.dashlane.com/fr/features/password-generator
+https://www.roboform.com/fr/password-generator
+
+https://www.cnil.fr/fr/principes-cles/guide-de-la-securite-des-donnees-personnelles
+https://keepass.info/
+https://www.youtube.com/@wakedxy
+https://github.com/CloudRainy/Pwned-NSI
+https://github.com/
+
+
+
+---------------------------------------------------------------------------------SOURCES IMAGES/VIDEO :---------------------------------------------------------------------------------
+
+SOURCES.HTML :
+Logo keepass http://https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/KeePass_icon.svg/1200px-KeePass_icon.svg.png
+Vidéo attaques DOS/DDOS - Waked XY :https://www.youtube.com/watch?v=boATQI1ye5M
+
+INDEX.HTML :
+Image d'illustration de la guerre "The Duryea Zouaves Carrying off the Body of Lieu. Greble from the Field of Battle, Amidst the Fire of the Secession Forces, at Great Bethel" : https://live.staticflickr.com/7098/26975125553_ad8d88a763_3k.jpg
+
+PROTEC-DATA.HTML :
+Image d'illustration des données personnelles : https://st2.depositphotos.com/1038076/6071/i/600/depositphotos_60716727-stock-photo-personal-data.jpg
