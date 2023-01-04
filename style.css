@@ -235,7 +235,7 @@ a {
   position: absolute;
   width: 100%;
   /* On créé un dégradé composé de deux couleurs choisies avec la palette intégrée de VS code*/
-  background: linear-gradient(to right, #40C9FF, rgba(130, 18, 182, 0.637));
+  background: linear-gradient(to right, #01b7ff71, rgba(150, 16, 212, 0.493));
   text-align: center;
   /* 2vite que les éléments se superposent */
   position:absolute;
@@ -267,6 +267,7 @@ a {
 }
 
 /* On met un background légèrement plus sombre pour le nom du site */
+/* On est obligé d'utiliser une classe */
 .logo {
   background:var(--navbar-logo-background-color);
 }
