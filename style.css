@@ -243,14 +243,19 @@ transition: transform 0.25 ease-out;
   /* On définit sa hauteur */  
   top: 90%;
   /* On le place en bas de la page */
-  bottom:0;  
+  bottom: 0;
   width:100%;
  /* On justifie le contenu */
   justify-content: center;
   /* On change la taille */
   font-size: 1.5rem;
-  
+
 }
+
+
+
+
+
 
 
 /* Les élements de txt de la navbar s'affichent en noir. Nb, on aurait pu les désigner par des classes */
@@ -278,7 +283,6 @@ transition: transform 0.25 ease-out;
 
 
 /* FIN DE LA NAVBAR */
-
 
 
 
