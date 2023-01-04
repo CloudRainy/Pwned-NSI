@@ -236,21 +236,20 @@ transition: transform 0.25 ease-out;
   position: absolute;
   width: 100%;
   /* On créé un dégradé composé de deux couleurs choisies avec la palette intégrée de VS code*/
-  background: linear-gradient(to right, #40C9FF, #A066FF);
+  background: linear-gradient(to right, #40C9FF, rgba(130, 18, 182, 0.637));
   text-align: center;
   /* 2vite que les éléments se superposent */
   position:absolute;
-  /* On le place en bas de la page */
+  /* On définit sa hauteur */  
   top: 90%;
+  /* On le place en bas de la page */
   bottom:0;  
   width:100%;
-  /* On définit sa hauteur */
-  height:90px;   
-  justify-content: space-between;
+ /* On justifie le contenu */
   justify-content: center;
+  /* On change la taille */
   font-size: 1.5rem;
   
-
 }
 
 
