@@ -21,7 +21,7 @@ body {
   /* Pas de marges*/
   margin:0;
   /* On utilise une police trouvée sur Google Font */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   /* On définit la taille de la police */
   font-size: 16px;   
   /* Cela nous permmetra d'insérer une image sans que texte et images se chevauchent */
@@ -80,7 +80,8 @@ transition: transform 0.25 ease-out;
 /* Permet de ne pas coller le texte à l'image */
   text-align: left;
   text-align: justify;
-  
+  min-height:100%;
+  padding-bottom:100px;
   
 }
 
@@ -135,15 +136,19 @@ transition: transform 0.25 ease-out;
 .navbar {
   /* On définit la place utilisée par le container du texte */
   width: 5rem;
-  position:fixed;
+  /* Permet d'éviter la superposition d'éléments */
+  position:absolute;
   /* Utilise toute la place sur la largeur */
   top:0px;
   left:0px;
-  bottom:0px;
+  /* On évite la colision avec le footer? Il est important de mettre plus de 10%, sinon la box-shadow est superposée au footer */
+  bottom:10.23%;
+  /* Séparation du menu avec le contenu par une délimitation ~ ombre */
+  box-shadow: #0b46c3dc 0 0px 5px;
   /* On réutilise la pseudo class que l'on a définit dans root, on met rend le background du menu de navigation blanc */
   background:var(--navbar-background-color);
-  /* Séparation entre le menu et le contenu par une ombre */
-  box-shadow: rgba(12,43, 30, 0.2) 0 4px 14px;
+
+
   /* Ajoute une transition de déroulement sur la largeur de la navbar, slider de gauche à droite */
   transition: width var(--navbar-transition-speed) ease-in;
 
@@ -206,6 +211,8 @@ transition: transform 0.25 ease-out;
 
 }
 
+
+
 /* On chercher à les centrer dans le carré*/
 .navbar-icon {
   text-align: center;
@@ -223,6 +230,29 @@ transition: transform 0.25 ease-out;
   color:var(--button-item-color);
   
 }
+
+/* Style du */
+#footer {
+  position: absolute;
+  width: 100%;
+  /* On créé un dégradé composé de deux couleurs choisies avec la palette intégrée de VS code*/
+  background: linear-gradient(to right, #40C9FF, #A066FF);
+  text-align: center;
+  /* 2vite que les éléments se superposent */
+  position:absolute;
+  /* On le place en bas de la page */
+  top: 90%;
+  bottom:0;  
+  width:100%;
+  /* On définit sa hauteur */
+  height:90px;   
+  justify-content: space-between;
+  justify-content: center;
+  font-size: 1.5rem;
+  
+
+}
+
 
 /* Les élements de txt de la navbar s'affichent en noir. Nb, on aurait pu les désigner par des classes */
 .navbar-title { 
