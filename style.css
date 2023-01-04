@@ -96,16 +96,6 @@ a {
  position: relative;
 }
 
-/* Ne fonctionne pas parfaitement */
- /* On rend l'image responsive en lui fixant sa largeur */
-/* width: 100%;
- /* Même chose en lui fixant sa largeur maximale */
- /* max-width: 400px; */ 
-
-
-
-
-
 
 
 /* Le logo de keepass, dans les sources */
@@ -249,10 +239,6 @@ a {
   /* On change la taille */
   font-size: 1.5rem;
 }
-
-
-
-
 
 
 
